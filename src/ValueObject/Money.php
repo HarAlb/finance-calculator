@@ -1,0 +1,1 @@
+<?phpdeclare(strict_types=1);final class Money{    public function __construct(        public readonly float $amount    ) {        if ($amount < 0) {            throw new InvalidArgumentException('Money cannot be negative');        }    }}
