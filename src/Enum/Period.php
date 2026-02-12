@@ -1,0 +1,1 @@
+<?phpdeclare(strict_types=1);namespace Haralb\FinanceCalculator\Enum;enum Period: int{    case DAY = 365;    case MONTH = 12;    case YEAR = 1;    public function compoundsPerYear(): int    {        return $this->value;    }}
