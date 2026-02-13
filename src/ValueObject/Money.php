@@ -1,1 +1,19 @@
-<?phpdeclare(strict_types=1);namespace Haralb\FinanceCalculator\ValueObject;final class Money{    /**     * @throws \Exception     */    public function __construct(        public readonly float $amount    ) {        if ($amount < 0) {            throw new \Exception('Money cannot be negative');        }    }}
+<?php
+
+declare(strict_types=1);
+
+namespace Haralb\FinanceCalculator\ValueObject;
+
+final class Money
+{
+    /**
+     * @throws \Exception
+     */
+    public function __construct(
+        public readonly float $amount
+    ) {
+        if ($amount < 0) {
+            throw new \Exception('Money cannot be negative');
+        }
+    }
+}
